@@ -20,13 +20,4 @@ const router = createRouter({
   routes,
 });
 
-router.beforeEach((to, from, next) => {
-  if (from === undefined) {
-    // user is refreshing the page
-    next({ name: "Home" }); // redirect to home page
-  } else {
-    next(); // allow navigation to proceed
-  }
-});
-
 export default router;
