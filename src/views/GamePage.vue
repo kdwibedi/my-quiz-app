@@ -5,7 +5,7 @@
       <div><button class="btn btn-secondary mt-5 mb-5" @click="redirectToHome">Try Again !</button></div>
     </div>
     <div class="wrapper-outer" v-else>
-      <div>Time Remaining: {{store.timer}}</div>
+      <div>Time Remaining: {{store.timer}} </div>
       <component :is="currentQuestionType" :questions="currentQuestion" :answer="currentQuestion.answer" @submit-answer="submitAnswer"></component>
     </div>
   </div>

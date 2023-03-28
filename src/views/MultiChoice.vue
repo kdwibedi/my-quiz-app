@@ -17,7 +17,15 @@
           <div v-if="!state.showAnswer && quiz.timer  < 1">
              Time Out !!! your score is 0 for this question
           </div>
-          <button class="btn btn-secondary" @click="submitAnswer">Submit Answer</button>
+          <div v-else>
+              <div v-if="state.isCorrect">
+                Yeah !!! Correct Answer
+              </div>
+              <div v-else>
+                  Wrong Answer !!!! 
+              </div>
+          </div>
+          <button class="btn btn-secondary mt-2" @click="submitAnswer">Submit Answer</button>
         
         </div> 
       </div> 

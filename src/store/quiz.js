@@ -80,6 +80,7 @@ export const useQuizStore = defineStore({
         this.currentQuestionIndex = 0;
         this.selectedCategory = null
         this.selectedDifficulty = null
+        this.score = 0
       },
       setCurrentQuestionIndex(index) {
         this.currentQuestionIndex = index;

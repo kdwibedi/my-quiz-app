@@ -24,11 +24,19 @@
           <div v-if="!state.showAnswer && store.timer  < 1">
              Time Out !!! your score is 0 for this question
           </div>
+          <div v-else>
+            <div v-if="state.isCorrect">
+              Yeah !!! Correct Answer
+            </div>
+            <div v-else>
+                Wrong Answer !!!! 
+            </div>
+          </div>
           <button class="btn btn-secondary" @click="submitAnswer">Submit Answer</button>        
         </div>     
       </div> 
     </div>
-    
+
       
     </div>
   </template>
