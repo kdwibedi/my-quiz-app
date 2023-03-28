@@ -1,6 +1,10 @@
 # quiz-app
 
 ## Project setup
+
+```
+Use node 16.18.0
+
 ```
 npm install
 ```
