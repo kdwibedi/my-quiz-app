@@ -36,7 +36,7 @@
   
   <script>   
   import { defineComponent, computed ,watchEffect, reactive} from 'vue'
-  import { useQuizStore } from '../store/quiz.js'
+  import { useQuizStore } from '../../store/quiz.js'
   
   export default defineComponent({
     props: {

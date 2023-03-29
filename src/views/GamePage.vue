@@ -14,8 +14,8 @@
 <script>
 import { defineComponent, computed, watchEffect, onMounted   } from 'vue';
 import { useQuizStore } from '../store/quiz.js'
-import BooleanQuestion from './BooleanQuestion.vue'
-import MultiChoice from './MultiChoice.vue'
+import BooleanQuestion from '../components/shared/BooleanQuestion.vue'
+import MultiChoice from '../components/shared/MultiChoice.vue'
 import {  useRouter } from 'vue-router';
 
 export default defineComponent({

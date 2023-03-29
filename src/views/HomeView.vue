@@ -46,6 +46,7 @@ export default {
       const store = useQuizStore();
       await store.fetchCategories();
       this.categories = store.categories;
+      console.log( this.categories);
       this.selectedCategory = this.categories[0].id;
     },
     async fetchQuestions() {

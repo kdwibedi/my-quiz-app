@@ -44,7 +44,7 @@
   <script>
    
   import { defineComponent, reactive } from 'vue'
-  import { useQuizStore } from '../store/quiz.js'
+  import { useQuizStore } from '../../store/quiz.js'
   
   export default defineComponent({
     props: {
